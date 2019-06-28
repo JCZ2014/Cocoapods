@@ -1,0 +1,6 @@
+sudo gem install -n /usr/local/bin cocoapods
+
+pod install --verbose --no-repo-update
+pod update --verbose --no-repo-update
+
+pod update JPush --verbose --no-repo-update
