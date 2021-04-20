@@ -1,6 +1,14 @@
-sudo gem install -n /usr/local/bin cocoapods
+sudo gem install -n /usr/local/bin cocoapods // 安装cocoapods
 
-pod install --verbose --no-repo-update
-pod update --verbose --no-repo-update
+pod install --verbose --no-repo-update // 只安装新添加的库
 
-pod update JPush --verbose --no-repo-update
+pod update --verbose --no-repo-update // 会在安装相关库时 更新其他库版本
+
+pod update JPush --verbose --no-repo-update // 只更新指定的库，其它库忽略
+
+platform :ios, '10.0'
+
+pod 'AFNetworking', '~> 2.0' // 大于2.0版本
+
+pod 'AFNetworking', '2.0' // 2.0版本
+
