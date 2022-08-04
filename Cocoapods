@@ -12,3 +12,4 @@ pod 'AFNetworking', '~> 2.0' // 大于2.0版本
 
 pod 'AFNetworking', '2.0' // 2.0版本
 
+arch -x86_64 pod update --verbose
